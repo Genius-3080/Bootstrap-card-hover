@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Travel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Locations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Asia</a></li>
+              <li><a class="dropdown-item" href="#">Europa</a></li>
+              <li><a class="dropdown-item" href="#">North America</a></li>
+              <li><a class="dropdown-item" href="#">Australia</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">See more...</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+     <section class="modal-box ">
+      <h1  class=" heading ">ENJOY THE WORLD</h1> 
+         <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Explore Now
+       </button>
+       
+       
+       <!-- Modal -->
+       <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog ">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Top Cities to Travel</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+    
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="card" style="width: 20rem;">
+                            <img src="https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg" class="card-img-top card__img" alt="new-york">
+                            <div class="card-body">
+                              <h5 class="card-title">New York</h5>
+                              <p class="card-text">New York, often called New York City or simply NYC, is the most populous city in the United States.</p>
+                              <a href="#" class="btn btn-primary"><i class="bi bi-cart4 ps-1"></i><span class="card__span">Buy</span></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" style="width: 20rem;">
+                            <img src="https://media.cntraveller.com/photos/6220bfe35e6084e5d4f02404/4:3/w_5120,h_3840,c_limit/Seine%20paris%20bike-GettyImages-1161606501.jpeg" class="card-img-top card__img" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Paris</h5>
+                              <p class="card-text">Paris, the capital city of France, remains and will remain the most beautiful place.</p>
+                              <a href="#" class="btn btn-primary"><i class="bi bi-cart4 ps-1"></i><span class="card__span">Buy</span></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <div class="card" style="width: 20rem;">
+                            <img src="https://tripplanet.ru/wp-content/uploads/asia/japan/tokyo/dostoprimechatelnosti-tokio.jpg" class="card-img-top card__img" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Tokio</h5>
+                              <p class="card-text">Tokyo is the cultural, business, and political center of the country. It is also the center of many transport systems</p>
+                              <a href="#" class="btn btn-primary"><i class="bi bi-cart4 ps-1"></i><span class="card__span">Buy</span></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+                      <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+    
+    
+    
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+    </section>
+  
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
